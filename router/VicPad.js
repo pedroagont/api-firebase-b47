@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-// CRUD Productos
-router.use(require('./ProductsRoutes'))
-router.use(require('./VicPad'))
+router.get('/vicpad', (req, res) => {
+  res.send('¡Este es el endpoint de Vic Pad! 🐶');
+})
 
 module.exports = router;
