@@ -5,5 +5,6 @@ const router = express.Router()
 router.use(require('./ProductsRoutes'))
 router.use(require('./gonzalo'))
 router.use(require('./VicPad'))
+router.use(require('./SenseiRoutes'))
 
 module.exports = router
